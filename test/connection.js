@@ -18,3 +18,14 @@ before(function(done){
   });
 
 });
+
+beforeEach(function(done){
+  // drop collections that will be inserted
+  mongoose.connection.collections.friends.drop(function(){
+    done();
+  });
+});
+
+afterEach(function(done){
+  done();
+});

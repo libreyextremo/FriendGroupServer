@@ -52,6 +52,6 @@ const FriendModelSchema = new Schema({
 });
 
 // set relation between KUserModelSchema and clientmodel
-const FriendModel= mongoose.model('friend', FriendModelSchema);
+const FriendModel= mongoose.model('friends', FriendModelSchema);
 
 module.exports = FriendModel;
